@@ -44,6 +44,7 @@ public class TopicSender {
             //创建一个临时的主题目的地，用于存放响应的消息
             Destination destination1 = session.createTemporaryQueue();
 
+
             //得到消息生产者【发送者】
             messageProducer = session.createProducer(destination);
             //创建消息消费者，用于消费响应
